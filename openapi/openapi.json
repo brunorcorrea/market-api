@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "e2b9e708-67cc-4982-89b3-ce32187d2606",
+		"name": "FastAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "List All Clients",
+					"_postman_id": "7d37099b-f4a8-4aac-8488-d1df27473331",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/clients/"
+					},
+					"response": []
+				},
+				{
+					"name": "List Client by ID",
+					"_postman_id": "48d5b272-cd62-4670-b769-a2d1b2d008a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/clients/227.828.480-03"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Clients",
+					"_postman_id": "538d3b51-c343-40a6-a39f-2235f6ae23b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpf\": \"227.828.480-03\",\r\n    \"rg\": \"18.361.704-6\",\r\n    \"name\": \"João Marcos\",\r\n    \"age\": 27,\r\n    \"height\": 182,\r\n    \"weight\": 87.5,\r\n    \"fidelity\": 1,\r\n    \"active\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/clients/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "8148b522-c88e-4eda-a24d-b7d7b07ab2b0"
+		},
+		{
+			"name": "Connection Test",
+			"_postman_id": "5bdb3293-c064-4718-a6f8-fb612b3b3dbf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{host}}/health"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a5291378-67dd-4faf-aa26-65d60a938576",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2f3e81c9-116a-441d-839d-aa6d6a8be88f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "d0832a45-c118-474f-b933-23f7759c2f5c",
+			"key": "host",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
