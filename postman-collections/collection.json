@@ -77,7 +77,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a5291378-67dd-4faf-aa26-65d60a938576",
+				"id": "4a93dbc4-b176-4ac9-bc53-0b295218e1d5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -87,7 +87,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2f3e81c9-116a-441d-839d-aa6d6a8be88f",
+				"id": "6a6626d6-a0af-44a0-a207-dd3ae81bd013",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -97,9 +97,9 @@
 	],
 	"variable": [
 		{
-			"id": "790b7f9d-7f25-49e3-ba56-be21f9ecf8a9",
+			"id": "802180b7-ea0d-422e-a1be-772adec77041",
 			"key": "host",
-			"value": "",
+			"value": "http://127.0.0.1:8000",
 			"type": "string"
 		}
 	]
