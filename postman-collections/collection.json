@@ -71,6 +71,19 @@
 				"url": "{{host}}/health"
 			},
 			"response": []
+		},
+		{
+			"name": "Register client",
+			"id": "94b82f22-7d37-4768-81c6-7c75de791396",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{host}}/health"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -97,7 +110,7 @@
 	],
 	"variable": [
 		{
-			"id": "c9cebedd-4d5a-45da-8925-65cda01ff9fa",
+			"id": "b983ed6a-f1d0-413e-ba35-5d73d8b8b8f8",
 			"key": "host",
 			"value": "http://127.0.0.1:8000",
 			"type": "string"
